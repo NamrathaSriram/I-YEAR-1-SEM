@@ -1,5 +1,4 @@
 #include<stdio.h>
-int addition(int m[10][10],int n[10][10],int a,int b);
 int multipication(int m[10][10],int n[10][10],int a,int b, int l);
 int main(){
     int i,j, r1,r2,c1,c2;
@@ -33,22 +32,7 @@ int main(){
 
     return 0;
 }
-int addition(int m[10][10],int n[10][10],int a,int b){
-    int i,j;
-    int x[10][10];
-    for(i=0;i<a;i++){
-        for(j=0;j<b;j++){
-    x[i][j]=m[i][j]+n[i][j];       
-    }
-    }
-    for(i=0;i<a;i++){
-        for(j=0;j<b;j++){
-            printf("%d\t",x[i][j]);
-        }
-        printf("\n");
-    }
-    return 0;
-}
+
 int multipication(int m[10][10],int n[10][10],int a,int b,int l){
     int i,j,k;
     int c[10][10];
